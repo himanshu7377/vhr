@@ -5,8 +5,8 @@ const photoSchema = new mongoose.Schema({
   description: { type: String },
   imageUrl: { type: String, required: true },
   images: {
-    type: [String], // Array of image URLs
-    default: [], // Default empty array
+    type: [String], // to store the list of imageurl for the popup functionaility
+    default: [], 
   },
 });
 

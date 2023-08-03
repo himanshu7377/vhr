@@ -11,7 +11,7 @@ mongoose.connect(url, connectionParams)
   .then(() => {
     console.log('Connected to MongoDB');
 
-    // Sample photo data with images array
+    // to add  photo along with tittle and description with images array in the db
     const samplePhotos = [
       
       {
@@ -32,10 +32,10 @@ mongoose.connect(url, connectionParams)
           'https://images.pexels.com/photos/973165/pexels-photo-973165.jpeg?auto=compress&cs=tinysrgb&w=600',
         ],
       },
-      // Add more sample photo objects as needed
+      
     ];
 
-    // Insert sample photos into the collection
+    
     Photo.insertMany(samplePhotos)
       .then((insertedPhotos) => {
         console.log('Sample photos inserted successfully:', insertedPhotos);

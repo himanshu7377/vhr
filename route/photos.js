@@ -4,10 +4,11 @@ const router = express.Router();
 
 const Photo = require('../models/photo');
 
-// Route to get all photos with pagination
+// Route to get all photos 
+
 router.get('/photos', async (req, res) => {
-  const page = parseInt(req.query.page) || 1; // Get the requested page number or default to page 1
-  const pageSize = 4; // Set the number of photos per page (adjust as needed)
+  const page = parseInt(req.query.page) || 1; 
+  const pageSize = 4; //  number of photos per page 
 
   try {
     const totalPhotos = await Photo.countDocuments({});
@@ -27,6 +28,7 @@ router.get('/photos', async (req, res) => {
 
 
 // Route to get a specific photo by ID
+
 router.get('/photos/:id', async (req, res) => {
     try {
       const photo = await Photo.findById(req.params.id);
