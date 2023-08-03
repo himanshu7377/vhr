@@ -1,14 +1,16 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-
+const photoRoutes = require('./route/photos');
 const mongoose = require('mongoose');
+
+//  mongodb connection string
 const url = 'mongodb+srv://himanshu:MwdSR3OYPatR7yOo@cluster0.iyctvo6.mongodb.net/v6Hr';
 
-const Photo = require('./models/photo');
 
-const photoRoutes = require('./route/photos');
 
+
+//  mongodb  connection 
 const connectionParams = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
