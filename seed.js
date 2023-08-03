@@ -13,22 +13,23 @@ mongoose.connect(url, connectionParams)
 
     // Sample photo data with images array
     const samplePhotos = [
+      
       {
-        title: 'Photo 1',
-        description: 'This is the first photo',
-        imageUrl: 'https://dummyimage.com/600x400/000000/ffffff',
+        title: 'city',
+        description: 'This is the seven photo',
+        imageUrl: 'https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&w=600',
         images: [
-          'https://dummyimage.com/600x400/000000/ffffff',
-          'https://dummyimage.com/600x400/ff0000/ffffff',
+          'https://images.pexels.com/photos/2422461/pexels-photo-2422461.jpeg?auto=compress&cs=tinysrgb&w=600',
+          'https://images.pexels.com/photos/1121782/pexels-photo-1121782.jpeg?auto=compress&cs=tinysrgb&w=600',
         ],
       },
       {
-        title: 'Photo 2',
-        description: 'This is the second photo',
-        imageUrl: 'https://images.unsplash.com/photo-1613310023042-ad79320c00ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW91bmF0aW5zfGVufDB8fDB8fHww&auto=format&fit=crop&w=1000&q=60',
+        title: 'Birds',
+        description: 'This is the eight photo',
+        imageUrl: 'https://images.pexels.com/photos/792416/pexels-photo-792416.jpeg?auto=compress&cs=tinysrgb&w=600',
         images: [
-          'https://dummyimage.com/600x400/ff0000/ffffff',
-          'https://dummyimage.com/600x400/00ff00/ffffff',
+          'https://images.pexels.com/photos/70069/pexels-photo-70069.jpeg?auto=compress&cs=tinysrgb&w=600',
+          'https://images.pexels.com/photos/973165/pexels-photo-973165.jpeg?auto=compress&cs=tinysrgb&w=600',
         ],
       },
       // Add more sample photo objects as needed
